@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false #No big transaction
+
+
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+server:
+  port: 8080
+
