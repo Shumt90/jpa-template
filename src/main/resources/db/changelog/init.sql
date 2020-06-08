@@ -18,5 +18,5 @@ create table PRODUCT
         foreign key (CATALOG_ID) references CATALOG (ID)
 );
 
-
-
+create index inx_prod_cat on PRODUCT (CATALOG_ID);
+create index inx_cat_par on CATALOG (PARENT_ID);
